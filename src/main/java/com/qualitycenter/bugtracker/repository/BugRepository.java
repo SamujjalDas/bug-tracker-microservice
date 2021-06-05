@@ -9,6 +9,6 @@ import com.qualitycenter.bugtracker.model.Bug;
 
 @Repository
 public interface BugRepository extends JpaRepository<Bug, Long> {
-	@Transactional
+	//@Transactional
 	public Bug findById(long bugId);
 }

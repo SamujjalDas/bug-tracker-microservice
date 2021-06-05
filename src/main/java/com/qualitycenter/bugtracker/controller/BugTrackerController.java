@@ -88,5 +88,13 @@ public class BugTrackerController {
 		bugErrorResponseDto.setError("Bug with provided id does not exist. please try again");
 		return new ResponseEntity<BugErrorResponseDto>(bugErrorResponseDto, HttpStatus.OK);
 	}
+	
+	@CrossOrigin(origins = "*")
+	@GetMapping("/loginApp")
+	public String login() {
+		return "authenticated successfully";
+	}
+	
+	
 
 }
